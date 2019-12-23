@@ -3,12 +3,6 @@ const config = require('./config');
 const twit = require('twit');
 const T = new twit(config);
 
-const cities = {
-    fortaleza: ['-3.71839', '-38.5434', '1km'],
-    caucaia: ['-3.7203049', '-38.6663911'],
-    maracanau: ['-3.87821', '-38.626']
-}
-
 function retweet() {
     let params = {
         q: 'kanal',
