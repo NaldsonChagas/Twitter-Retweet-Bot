@@ -14,17 +14,13 @@ function retweet() {
         let tweets = data.statuses;
         if (!err) {
             for (const dat of tweets) {
-                console.log(dat);
                 const retweetId = dat.id_str;
 
                 T.post('statuses/retweet/:id', { id: retweetId }, (err, response) => {
-                    if (response) {
-                        console.log(`Retuitou, macho vei ${response}`);
-                    }
-
                     if (err) {
-                        console.log(`Deu ruim`);
-                        console.log(err);
+                        console.log(err.message);
+                    } else {
+                        console.log(`Retuitou, macho vei`);
                     }
                 });
             }
