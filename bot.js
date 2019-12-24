@@ -19,7 +19,6 @@ function searchTweets() {
         let tweets = data.statuses;
         if (!err) {
             for (const dat of tweets) {
-                console.log(dat);
                 const retweetId = dat.id_str;
                 retweet(retweetId);
             }
