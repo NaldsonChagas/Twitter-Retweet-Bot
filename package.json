@@ -9,6 +9,7 @@
   "author": "Naldson Chagas",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "twit": "^2.2.11"
   }
 }
