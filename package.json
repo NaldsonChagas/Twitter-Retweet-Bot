@@ -1,5 +1,5 @@
 {
-  "name": "kanal-reweet-bot",
+  "name": "twitter-reweet-bot",
   "version": "1.0.0",
   "description": "Um bot que retuita tudo que contenha a palavra kanal",
   "main": "src/bot.js",
